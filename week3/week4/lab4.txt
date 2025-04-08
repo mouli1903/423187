@@ -1,0 +1,18 @@
+#!/bin/bash
+echo | grep -i "error" ../logfile.txt
+
+#!/bin/bash
+echo | grep -E "[A-Z]" ../sentences.txt
+
+#!/bin/bash
+echo | grep -E "404" ../server.log
+
+#!/bin/bash
+echo | grep -l "project" ../*.txt
+
+#!/bin/bash
+echo | grep -E "*ing" ../dictionary.txt
+
+#!/bin/bash
+echo | grep -oE "[0-9]{4}-[0-9]{2}-[0-9]{2}" ../events.txt
+
