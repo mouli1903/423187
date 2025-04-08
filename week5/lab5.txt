@@ -1,0 +1,39 @@
+#!/bin/bash
+echo "Enter two Numbers :"
+read a b
+echo "Before Swapping a:$a b:$b"
+temp=$a
+a=$b
+b=$temp
+
+echo "After Swapping a:$a b:$b"
+
+
+#!/bin/bash
+i=1
+while [ $i -le 10 ]; do 
+	echo $i
+	((i=($i + 1)))
+done 
+
+
+#!/bin/bash
+echo "Enter a year"
+read year
+if [ $((year % 4)) -eq 0 ] && [ $((year % 100)) -ne 0 ] || [ $((year % 400)) -eq 0 ]; then 
+	echo "$year is a leap year"
+else 
+	echo "$year is not a leap year"
+fi
+
+#!/bin/bash
+echo | sed 's/foo/bar/' ../text.txt
+
+
+#!/bin/bash
+echo | sed -i 's/^/' ../input.txt
+
+#!/bin/bash
+echo | cat ../text.txt
+echo | sed -i '/update/s/old/new/g' ../text.txt
+echo | cat ../text.txt
