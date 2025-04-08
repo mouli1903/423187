@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Q1 - List all files in current directory that start with the letter a
+mkdir mouli
+cd mouli
+touch a.txt
+touch abc.c
+touch design.txt
+touch alpha.c
+touch aaa.py
+ls a*
+
+#Q2 - List all files in current directory with a .txt extension
+ls *.txt
+
+#Q3 - List all files in current directory whose names have exactly five characters.
+ls ?????
+
+#Q4 - List all files in current directory that start with any letter between b and e
+ls [b-e]*
+
+#Q5 - List all files in current directory ending with .log extension and second character is a number.
+touch a2.log
+touch c1def.log
+touch abcdef.log
+ls ?[0-9]*.log
